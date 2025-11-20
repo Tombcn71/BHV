@@ -39,7 +39,10 @@ const packages = [
 
 export function Packages() {
   return (
-    <section id="packages" className="scroll-mt-20 bg-muted py-20 md:py-28">
+    <section
+      id="packages"
+      className="scroll-mt-20 bg-gradient-to-br from-primary/5 via-background to-accent/5 py-20 md:py-28"
+    >
       <div className="container mx-auto px-4">
         <div className="mb-16 text-center">
           <h2 className="mb-4 text-balance text-4xl font-bold tracking-tight md:text-5xl">Onze Trainingspakketten</h2>
@@ -60,7 +63,7 @@ export function Packages() {
               }`}
             >
               {pkg.highlighted && (
-                <div className="absolute right-6 top-6 flex items-center gap-2 rounded-full bg-primary px-4 py-1.5 text-sm font-bold text-white shadow-lg">
+                <div className="absolute right-6 top-6 flex items-center gap-2 rounded-full bg-gradient-to-r from-primary to-accent px-4 py-1.5 text-sm font-bold text-white shadow-lg">
                   <Sparkles className="h-4 w-4" />
                   Meest Gekozen
                 </div>
@@ -73,7 +76,9 @@ export function Packages() {
 
               <div className="mb-8">
                 <div className="flex items-baseline gap-2">
-                  <span className="text-primary text-6xl font-bold">€{pkg.price}</span>
+                  <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-6xl font-bold text-transparent">
+                    €{pkg.price}
+                  </span>
                   <span className="text-muted-foreground font-medium">per persoon</span>
                 </div>
               </div>

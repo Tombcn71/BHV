@@ -16,8 +16,7 @@ export function About() {
           </div>
 
           <div className="lg:order-1">
-            {/* Replaced gradient icon background with solid primary color */}
-            <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-primary text-white shadow-lg">
+            <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-accent text-white shadow-lg">
               <Shield className="h-8 w-8" />
             </div>
             <h2 className="mb-6 text-balance text-4xl font-bold tracking-tight md:text-5xl">

@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-white">
+    <section className="relative overflow-hidden bg-primary/5">
       <div className="container relative mx-auto px-4 py-16 md:py-24">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
           <div className="flex flex-col">
@@ -70,7 +70,6 @@ export function Hero() {
                 priority
               />
             </div>
-            {/* Floating badge */}
             <div className="absolute -bottom-6 -right-6 rounded-2xl bg-card p-6 shadow-xl border-2 border-primary/20">
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary">100%</div>
